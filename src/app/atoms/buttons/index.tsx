@@ -1,3 +1,5 @@
+import './styles.css'
+
 export const CloseButton = () => {
   return (
     <div>CloseButton</div>
@@ -6,6 +8,9 @@ export const CloseButton = () => {
 
 export const SettingsButton = () => {
   return (
-    <div>SettingsButton</div>
+    <div>
+      <button className="settingButton">
+      </button>
+    </div>
   )
 }
