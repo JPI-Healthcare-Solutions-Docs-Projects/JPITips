@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import App from './organisms/app';
+import App from './pages/tipsPage/jpiTipsPage';
 import '../index.css';
 
 const root = createRoot(document.getElementById('root') as HTMLInputElement);
