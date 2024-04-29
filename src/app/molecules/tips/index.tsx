@@ -1,16 +1,38 @@
 import { Title } from "../../atoms/title"
 import { Subtitle } from "../../atoms/subtitle"
+import Slider from "react-slick"
 
-const Tips = () => {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './styles.css'
 
-    //will have Title:tip title, Subtitle:tip, use an array of obj: [{title:abc, tip:tip}, ...]
-  return (
-    <div>
-        Tips Molecule
-        <Title />
-        <Subtitle />
-    </div>
-  )
+interface TipObjectType {
+    title: string;
+    tip: string;
+    id: number;
 }
 
-export default Tips
+export const TipsMolecule: React.FC = () => {
+
+    var settings = {
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+
+    const test = [{title:"directvet", tip:"turn off cubex", id:0},{title:"directvet2", tip:"turn off cubex2", id:1}];
+
+    return (
+        <div>
+            <div className="container">
+                <Slider {...settings}>
+                    {test.map(({title, tip, id}) => <div ><Title text={title}/><Subtitle text={tip}/></div>)}
+                </Slider>
+            </div>
+        </div>
+    )
+}

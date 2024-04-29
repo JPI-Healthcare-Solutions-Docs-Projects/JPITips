@@ -1,5 +1,9 @@
-export const Title = () => {
+interface TextType {
+    text: string;
+}
+
+export const Title: React.FC<TextType> = (props: TextType) => {
     return (
-      <div>Title</div>
+        <h1>{props.text}</h1>
     )
-  }
+}

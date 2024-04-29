@@ -1,9 +1,8 @@
-import TipsMolecule from '../../molecules/tips/index'
+import { TipsMolecule } from "../../molecules/tips"
 
 const Tips = () => {
   return (
     <div>
-        Tips Organism
         <TipsMolecule/>
         </div>
   )

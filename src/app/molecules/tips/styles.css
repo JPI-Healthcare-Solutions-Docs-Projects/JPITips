@@ -1,0 +1,13 @@
+.slick-prev:before, .slick-next:before {
+  color: black;
+  }
+
+  .slick-prev:before
+{
+    content: '';
+}
+
+.slick-next:before
+{
+    content: '';
+}
