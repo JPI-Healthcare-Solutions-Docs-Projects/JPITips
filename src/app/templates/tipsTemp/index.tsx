@@ -6,7 +6,7 @@ const JPITipsTemplate = () => {
   return (
     <div>
       <Tips />
-      <Settings />
+      {/* <Settings /> */}
     </div>
   )
 }

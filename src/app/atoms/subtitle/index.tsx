@@ -1,5 +1,9 @@
-export const Subtitle = () => {
+interface TextType {
+    text: string;
+}
+
+export const Subtitle: React.FC<TextType> = (props: TextType) => {
     return (
-      <div>Subtitle</div>
+        <h3>{props.text}</h3>
     )
-  }
+}
