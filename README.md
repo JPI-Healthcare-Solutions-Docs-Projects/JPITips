@@ -119,7 +119,7 @@ Lets say the task code is: JTWP-14
 <br>
 Then the github branch name is: fundamental/JTWP-14
 
-### Phase 3: Building Features with Tests
+### Phase 3: Building Features
 
 #### Core principles
 
@@ -127,8 +127,12 @@ Then the github branch name is: fundamental/JTWP-14
 - Make sure the branch name and code worked on is focusing ONLY on the JIRA Task
 - Building small and modular pull requests related to a JIRA Task
 - Review code before making the pull request
-- Test the code!!!
+- Test the code (Still trying to master tdd)
 
 ### Phase 4: Refactoring
 
 Theres always room to improve!
+- code readability
+- documentation
+- code modularity
+- clean code
