@@ -102,6 +102,7 @@ Github Branches will be named after the child tickets
 ### Creating and Adding JIRA Tasks to the JIRA Board
 
 Creating the timeline for the project:
+
 ![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/d83583f0-378e-470b-b35a-0a14bd71bfd4)
 
 ![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/11099f0d-f347-44b9-979a-e066346ca9a6)
