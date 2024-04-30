@@ -2,22 +2,123 @@
 
 ## Step By Step Process of how application was built:
 
-### The team:
+### Phase 0: Describing the Problem and solution statement
 
 ### Identifying the problem
 
-### providing the solution
+The Acquisition software did not have clear and intuitive prompts for error messages, and lack of an FAQ for troubleshooting. Some context is that the Acquisition software is built by the JPI Branch in Korea.
+
+Other issues we face with this:
+- The Market in Asia differs from the market in North and South America.
+- JPI Korea support infrastructure is through dealers, where we are the first line of support for our dealers.
+
+### The solution
+
+To compensate for the lack of control we have with our acquisiton software, we moved in a direction of implementing our own software that will run concurrently with the acquisition.
+
+#
+
+### Phase 1: Application Mock Up and Workflow
+
+#### Desinging a mock up of the tips window:
+
+![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/f0ca3994-bfe3-47a1-af32-bafb9b3586b9)
+
+![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/216601eb-1dde-4fcd-b443-387c4622eb41)
+
+We designed the Mock-Up in the shoes of the typical doctor that will use our acquisition software. We wanted to make it as concise yet user-friendly as possible. Adding a close button instead of the X button in the window bar, adding progression in the dots below the tips, and creating a background to play with the contrast, brightness and focus of the content.
+
+#### Gathering Assets used in the mockup:
+
+![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/90fb9876-ce09-4c44-89a7-571853725d21)
+
+By Organizing the assets and constructing an intuitive structure makes it easier to utilize assets and change them as we need in the future
+
+#
+
+### Phase 2: Initializing the Project
 
 ### Enforcing Github Rules (for myself)
 
-### creating the JIRA Board
+#### Project Guidelines
 
-### Adding JIRA Tasks
+#### Dependency Restrictions:
 
-### Phase 0
+Rule 1: Any dependency that needs to be installed must provide following:
+Show that dependency function is not available in native
+Provide justification of why we need this dependency
+Provide alternative dependencies and justify reasoning of not choosing alternative
+Provide Pro and Con of dependency efficiency in application
 
-### Phase 1
+Rule 2: All PR with dependencies that deviate from Production will be closed
 
-### Phase 2
+Rule 3: Dependency must be: active within a reputable community, well documented, and ongoing updates
 
-### Phase 3
+#### Pull Request Restrictions:
+
+Rule 1: PR must correlate to a ticket on JIRA
+PR with changes unrelated to Ticket will not be merged. This includes CSS Styling! Do not add styling unless Ticket request styling changes. Only implement functionality if the ticket is regarding a feature
+
+Rule 2: Unrelated PR will be closed and can potentially be re-addressed as a github issue or proposal for a creation of new task on JIRA
+Collaborator must provide justification on why the change must be made, or the issue that they encountered
+
+Rule 3: PR must pass all checks in order to remain open.
+If PR does not pass check due to a bug, Collaborator must create a new github issue instead of a PR.
+
+Rule 4: All PR must include tests that cover the changes you've made in your work.
+
+Rule 5: Write readable code – keep functions small and modular and name variables descriptively.
+
+Rule 6: Document your code thoroughly.
+
+Rule 7: Make sure all the existing tests pass by running package.json test command
+
+#### Branch Restrictions:
+
+Rule 1: Branch name MUST have following naming convention: 
+{TypeOfTicket}/{JIRA Ticket Number}
+
+Example:
+Branch name: feature/ticket-9
+(the branch MUST start with a lowercase - git ruling) 
+
+#### Code Review Restrictions:
+
+Rule 1: Code Review must be thorough:
+Review if any additional dependencies were added
+
+End Game
+Review the time complexity of implementation
+If non optimal solution is created, requested change must include the optimized strategy for implementation
+
+#### JIRA Task Restrictions:
+
+Rule 1: Jira in progress Tasks must be free from dependency injections
+No two in progress JIRA Task should depend on each other to be completed
+
+Rule 2: Jira tasks that are high level or large tickets, must be modularized into smaller tickets if possible
+Github Branches will be named after the child tickets
+
+### Creating and Adding JIRA Tasks to the JIRA Board
+
+Creating the timeline for the project:
+![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/d83583f0-378e-470b-b35a-0a14bd71bfd4)
+
+![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/11099f0d-f347-44b9-979a-e066346ca9a6)
+
+When adding Tasks, I require to specify where in the timeline the task is designated to.
+
+I make sure to specify what type of task it is:
+- Fundemantal
+- Feature
+- Refactor
+- Testing
+
+#### Example: Fundamental: Setting Up webpack
+Lets say the task code is: JTWP-14
+<br>
+Then the github branch name is: fundamental/JTWP-14
+
+### Phase 3: Building Features with Tests
+
+### Phase 4: Refactoring
