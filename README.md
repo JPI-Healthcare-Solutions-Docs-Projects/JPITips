@@ -38,7 +38,7 @@ By Organizing the assets and constructing an intuitive structure makes it easier
 
 ### Phase 2: Initializing the Project
 
-### Enforcing Github Rules (for myself)
+### Enforcing Coding Standard Rules (for myself)
 
 #### Project Guidelines
 
