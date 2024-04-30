@@ -121,4 +121,14 @@ Then the github branch name is: fundamental/JTWP-14
 
 ### Phase 3: Building Features with Tests
 
+#### Core principles
+
+- Build the application before pushing to github
+- Make sure the branch name and code worked on is focusing ONLY on the JIRA Task
+- Building small and modular pull requests related to a JIRA Task
+- Review code before making the pull request
+- Test the code!!!
+
 ### Phase 4: Refactoring
+
+Theres always room to improve!
