@@ -4,7 +4,7 @@ import { useState, createContext } from "react";
 import { ProductContextType, ContextProviderProps } from "./context.type";
 
 //Context
-export const ProductTypeContext = createContext<ProductContextType>({
+export const ProductContext = createContext<ProductContextType>({
     product: "",
     setProduct: () => {""}
 });
@@ -13,8 +13,8 @@ export const ProductTypeContext = createContext<ProductContextType>({
 export const ProductType = ( { children }: ContextProviderProps ) => {
     const [ product, setProduct ] = useState("");
     return(
-        <ProductTypeContext.Provider value={{product, setProduct}}>
+        <ProductContext.Provider value={{product, setProduct}}>
             { children }
-        </ProductTypeContext.Provider>
+        </ProductContext.Provider>
     )
 }
