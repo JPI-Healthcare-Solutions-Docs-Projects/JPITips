@@ -14,9 +14,9 @@ const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     height: 400,
-    resizable: false,
     width: 800,
-    autoHideMenuBar: true,
+    // titleBarStyle: 'hidden',
+    // autoHideMenuBar: true,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
@@ -28,7 +28,7 @@ const createWindow = (): void => {
   mainWindow.setFullScreenable(false);
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

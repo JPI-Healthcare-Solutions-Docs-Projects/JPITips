@@ -1,13 +1,13 @@
 //Organisms
 import Tips from "../../organisms/tips/tips"
-import Settings from "../../organisms/settings/settings"
+import TitleBar from "../../organisms/titleBar"
 
 const JPITipsTemplate = () => {
 
   return (
     <div>
+      <TitleBar />
       <Tips />
-      <Settings />
     </div>
   )
 }
