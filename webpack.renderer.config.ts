@@ -8,9 +8,14 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
-rules.push( {
-  test: /\.(gif|svg|jpg|png)$/,  // add whatever files you wanna use within this regEx
-  use: ["file-loader"]
+rules.push({
+  test: /\.(png|jpg|gif)$/i,
+  use: [{
+      loader: 'url-loader',
+      options: {
+          limit: 8192 // in bytes
+      }
+  }]
 })
 
 export const rendererConfig: Configuration = {
