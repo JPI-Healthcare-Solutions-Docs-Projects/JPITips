@@ -2,7 +2,7 @@
 import Tips from "../../organisms/tips/tips"
 import TitleBar from "../../organisms/titleBar"
 import ProductImage from "../../organisms/productImage"
-import "./styles"
+import "./styles.css"
 
 const JPITipsTemplate = () => {
 
