@@ -1,9 +1,9 @@
 .settingButton {
-    position: absolute;
-    width:40px;
-    height:40px;
-    background: url(../../../../public/settings.svg);
-    background-size: contain;
+    width:18px;
+    height:18px;
+    background: url(/public/assets/image/buttons/SettingsIcon.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     border: none;
+    
 }

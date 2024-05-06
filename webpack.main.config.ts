@@ -11,7 +11,16 @@ export const mainConfig: Configuration = {
   entry: './src/index.ts',
   // Put your normal webpack config below here
   module: {
-    rules,
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+        ],
+      },
+    ],
   },
   plugins,
   resolve: {

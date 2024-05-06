@@ -25,9 +25,7 @@ export const SettingsButton = () => {
 
   return (
     <div>
-      {product}
       <button className="settingButton" onClick={test}>
-        click here
       </button>
     </div>
   )

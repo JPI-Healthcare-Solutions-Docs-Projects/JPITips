@@ -1,0 +1,1 @@
+//Here we will pass all the props down to each component: Logo, image, tips, title
