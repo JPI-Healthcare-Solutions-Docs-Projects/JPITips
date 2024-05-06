@@ -8,6 +8,11 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
+rules.push( {
+  test: /\.(gif|svg|jpg|png)$/,  // add whatever files you wanna use within this regEx
+  use: ["file-loader"]
+})
+
 export const rendererConfig: Configuration = {
   module: {
     rules,

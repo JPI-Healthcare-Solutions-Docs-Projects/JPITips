@@ -4,6 +4,7 @@ const Tips = () => {
   return (
     <div>
         <TipsMolecule/>
+        Tips 
         </div>
   )
 }

@@ -1,7 +1,7 @@
 .settingButton {
     width:18px;
     height:18px;
-    background: url(../../../../public/SettingsIcon.png);
+    background: url(/public/assets/image/buttons/SettingsIcon.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border: none;

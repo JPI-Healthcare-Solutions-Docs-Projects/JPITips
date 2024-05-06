@@ -15,17 +15,16 @@ const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     height: 400,
     width: 800,
-    // titleBarStyle: 'hidden',
-    // autoHideMenuBar: true,
-    frame: false,
-    thickFrame: false,
-    resizable: false,
+
+    // frame: false,
+    // thickFrame: false,
+    // resizable: false,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
   });
 
-  mainWindow.setOverlayIcon(nativeImage.createFromPath('public/jpi.ico'), 'Description for overlay')
+  mainWindow.setOverlayIcon(nativeImage.createFromPath('public/assets/icons/jpi.ico'), 'Description for overlay')
   mainWindow.setAlwaysOnTop(true, "floating");
   mainWindow.setVisibleOnAllWorkspaces(true);
   mainWindow.setFullScreenable(false);
