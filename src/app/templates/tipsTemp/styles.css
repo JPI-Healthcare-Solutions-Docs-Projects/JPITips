@@ -4,7 +4,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-image: url("../../../../public/assets/image/background/Background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .pageItems {

@@ -9,13 +9,8 @@ rules.push({
 });
 
 rules.push({
-  test: /\.(png|jpg|gif)$/i,
-  use: [{
-      loader: 'url-loader',
-      options: {
-          limit: 8192 // in bytes
-      }
-  }]
+  test: /\.(jpg|png|svg|gif)$/,
+  type: 'asset/resource',
 })
 
 export const rendererConfig: Configuration = {
