@@ -8,6 +8,16 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
+rules.push({
+  test: /\.(png|jpg|gif)$/i,
+  use: [{
+      loader: 'url-loader',
+      options: {
+          limit: 8192 // in bytes
+      }
+  }]
+})
+
 export const rendererConfig: Configuration = {
   module: {
     rules,

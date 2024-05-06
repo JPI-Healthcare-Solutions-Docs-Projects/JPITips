@@ -1,8 +1,8 @@
 import './styles.css'
-
 import { ProductContext } from '../../context/contextProviders'
-
 import { useContext } from 'react'
+// import { initialize, enable as enableRemote } from "@electron/remote/main";
+// initialize();
 
 export const CloseButton = () => {
   return (
