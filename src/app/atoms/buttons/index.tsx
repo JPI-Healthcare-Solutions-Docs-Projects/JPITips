@@ -1,5 +1,5 @@
 import './styles.css'
-import { ProductContext } from '../../context/contextProviders'
+import { ProductContext, SettingsContext } from '../../context/contextProviders'
 import { useContext } from 'react'
 // import { initialize, enable as enableRemote } from "@electron/remote/main";
 // initialize();
@@ -12,20 +12,34 @@ export const CloseButton = () => {
 
 export const SettingsButton = () => {
 
-  const {product, setProduct}  = useContext(ProductContext);
+  const {settings, setSettings}  = useContext(SettingsContext);
 
   const test = () => {
-    setProduct("Direct Vet");
-    console.log(product)
-    // renderer process (mainWindow)
-// const childWindow = window.open('', 'modal')
-// childWindow.document.write('<h1>Hello</h1>')
-    return product
+    setSettings(true);
+    return "hello"
   }
 
   return (
     <div>
       <button className="settingButton" onClick={test}>
+      </button>
+    </div>
+  )
+}
+
+export const BackButton = () => {
+
+  const {settings, setSettings}  = useContext(SettingsContext);
+
+  const test = () => {
+    setSettings(false);
+    return "hello"
+  }
+
+  return (
+    <div>
+      <button className="backButton" onClick={test}>
+        back
       </button>
     </div>
   )
