@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ProductType, SettingsType } from './context/contextProviders';
 
 //App
-import App from './pages/tipsPage/jpiTipsPage';
+import App from './pages/main';
 
 //Styling
 import '../index.css';

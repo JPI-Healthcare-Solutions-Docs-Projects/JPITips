@@ -2,6 +2,10 @@ import "./styles"
 import logo from "/public/assets/image/products/DirectVet.png"
 
 const ProductImage = () => {
+
+//Based on product chosen
+// - Change the image provided
+
   return (
     <div className="imageContainer">
       <div className="image">
