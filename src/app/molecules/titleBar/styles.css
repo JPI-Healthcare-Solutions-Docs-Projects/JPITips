@@ -6,15 +6,25 @@
     align-items: center;
 }
 
-.Title {
+.titleContent {
+    font-size: 12px;
     color:white;
     grid-column: 2 / 3;
     grid-row: 1;
+    display: flex;
     justify-self: center;
+    align-items: center;
     
 }
 
-.Settings {
+.titleBarLogo img {
+    margin-right: 15px;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.SettingsButton {
     grid-column: 3 / 3;
     grid-row: 1;
     justify-self: end;
