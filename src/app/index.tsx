@@ -1,6 +1,6 @@
 //Tools
 import { createRoot } from 'react-dom/client';
-import { ProductType, SettingsType } from './context/contextProviders';
+import { ProductType, SettingsType, PracticeType } from './context/contextProviders';
 
 //App
 import App from './pages/main';
@@ -14,7 +14,9 @@ const root = createRoot(document.getElementById('root') as HTMLInputElement);
 root.render(
     <ProductType>
         <SettingsType>
-            <App />
+            <PracticeType>
+                <App />
+            </PracticeType>
         </SettingsType>
     </ProductType>
 );

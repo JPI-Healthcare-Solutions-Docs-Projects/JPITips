@@ -1,12 +1,17 @@
 import { useState, createContext } from "react";
 
 //Types
-import { ProductContextType, SettingsPageContextType, ContextProviderProps } from "./context.type";
+import { ProductContextType, SettingsPageContextType, PracticeContextType, ContextProviderProps } from "./context.type";
 
 //Context
 export const ProductContext = createContext<ProductContextType>({
     product: "",
     setProduct: () => { "" }
+});
+
+export const PracticeContext = createContext<PracticeContextType>({
+    practice: "",
+    setPractice: () => { "" }
 });
 
 export const SettingsContext = createContext<SettingsPageContextType>({
@@ -16,11 +21,20 @@ export const SettingsContext = createContext<SettingsPageContextType>({
 
 //Providers
 export const ProductType = ({ children }: ContextProviderProps) => {
-    const [product, setProduct] = useState("");
+    const [product, setProduct] = useState("Default");
     return (
         <ProductContext.Provider value={{ product, setProduct }}>
             {children}
         </ProductContext.Provider>
+    )
+}
+
+export const PracticeType = ({ children }: ContextProviderProps) => {
+    const [practice, setPractice] = useState("Default");
+    return (
+        <PracticeContext.Provider value={{ practice, setPractice }}>
+            {children}
+        </PracticeContext.Provider>
     )
 }
 

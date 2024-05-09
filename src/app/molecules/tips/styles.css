@@ -1,0 +1,13 @@
+.TipsContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.Carousel {
+    align-self: self-start;
+}
+
+.CloseButton {
+    align-self: self-start;
+}
