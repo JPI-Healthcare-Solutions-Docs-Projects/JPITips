@@ -9,6 +9,11 @@ export interface ProductContextType {
     setProduct: Dispatch<SetStateAction<string>>
 }
 
+export interface PracticeContextType {
+    practice: string;
+    setPractice: Dispatch<SetStateAction<string>>
+}
+
 export interface SettingsPageContextType {
     settings: boolean;
     setSettings: Dispatch<SetStateAction<boolean>>

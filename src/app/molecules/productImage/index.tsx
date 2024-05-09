@@ -1,16 +1,11 @@
 import "./styles"
-import logo from "/public/assets/image/products/DirectVet.png"
+import { ProductImages } from "../../atoms/dynamic/index"
 
 const ProductImage = () => {
 
-//Based on product chosen
-// - Change the image provided
-
   return (
     <div className="imageContainer">
-      <div className="image">
-        <img src={logo} height="310px" width="227px"/>
-      </div>
+      <ProductImages />
     </div>
   )
 }

@@ -1,9 +1,9 @@
-import { BackButton } from "../../atoms/buttons"
+import SettingMolecule from "../../molecules/settings"
 
 const SettingsPage = () => {
   return (
     <div>
-        <BackButton/>
+        <SettingMolecule/>
     </div>
   )
 }
