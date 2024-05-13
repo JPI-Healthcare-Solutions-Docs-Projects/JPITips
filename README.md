@@ -128,9 +128,7 @@ By Organizing the assets and constructing an intuitive structure makes it easier
 
 #### Phase 2: Initializing the Project
 
-##### Enforcing Coding Standard Rules (for myself)
-
-##### Project Guidelines
+##### Enforcing Coding Standard Rules (for myself - ATLEAST TRIED MY BEST TO!)
 
 ###### Dependency Restrictions:
 
