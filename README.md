@@ -2,14 +2,15 @@
 
 ### Table of Contents
 **[Latest Updates](#patch-notes)**<br>
-**[Installation Instructions](#installation-instructions)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
+**[Manual Installation Instructions](#manual-installation-instructions)**<br>
+**[Future Features](#future-features)**<br>
 **[Building the Application](#building-the-application)**<br>
 - **[Phase 0: Describing the Problem and solution statement](#phase-0-describing-the-problem-and-solution-statement)**<br>
 - **[Phase 1: Application Mock Up and Workflow](#phase-1-application-mock-up-and-workflow)**<br>
 - **[Phase 2: Initializing the Project](#phase-2-initializing-the-project)**<br>
 - **[Phase 3: Building Features](#phase-3-building-features)**<br>
 - **[Phase 4: Refactoring](#phase-4-refactoring)**<br>
+**[Download Demo](#download-link)**<br>
 
 ## Patch Notes
 
@@ -31,12 +32,37 @@ Estimated Timeline to Deployment:
 - Completed Production App: 5/14/2024
 - Beta Test Phase Start: 5/15/2024
 
-Demo Video (5/9/2024):
-https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing
+[Demo Video (5/9/2024)](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
 
+## Manual Installation Instructions
 
+Prerequisites: <br>
+- Node (LTS) <br>
+- Visual Studio Code (LTS) <br>
 
+1. Clone this repo
+2. Follow the instructions [Visual Studo Git Introduction](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+3. Open a new terminal and type:
+   <pre>
+   npm install
+   </pre>
+4. Run the application by typing the following in the terminal:
+   <pre>
+   npm run start
+   </pre>
 
+## Future Features
+
+### Upcoming Patch 1.0.0.1
+- Store Product and Practice State in Persistent Storage
+- Have a Loading Bar while Assets are rendering
+- Styling the Settings Bar
+
+### Future Patches TODO:
+- Refactoring Types
+- Refactoring all components and pages
+- Setting up Github Publish
+- Set up IPC Listeners for Panel Connection
 
 
 
@@ -194,3 +220,7 @@ Theres always room to improve!
 - documentation
 - code modularity
 - clean code
+
+## Download Link
+
+
