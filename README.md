@@ -1,6 +1,46 @@
 # JPI Tips Electron Application
 
-## Step By Step Process of how application was built:
+### Table of Contents
+**[Latest Updates](#patch-notes)**<br>
+**[Installation Instructions](#installation-instructions)**<br>
+**[Usage Instructions](#usage-instructions)**<br>
+**[Building the Application](#building-the-application)**<br>
+- **[Phase 0: Describing the Problem and solution statement](#phase-0-describing-the-problem-and-solution-statement)**<br>
+- **[Phase 1: Application Mock Up and Workflow](#phase-1-application-mock-up-and-workflow)**<br>
+- **[Phase 2: Initializing the Project](#phase-2-initializing-the-project)**<br>
+- **[Phase 3: Building Features](#phase-3-building-features)**<br>
+- **[Phase 4: Refactoring](#phase-4-refactoring)**<br>
+
+## Patch Notes
+
+#### Update 5/13/2024:
+
+I am about 50% complete with the project before Production Deployment. All that are left are smaller tasks that will take no more than 2-3 days to complete.
+
+- [x] Designing the application solution
+- [x] Designing Styling
+- [x] Creating Core Function
+- [x] Implementing Styling
+- [ ] Implementing Settings Page
+- [ ] Style the Settings Page
+- [ ] Review with Marketing Team and Get List of Tips from Tech Team
+- [ ] Refactoring and Optimization
+- [ ] Auto Update Module
+
+Estimated Timeline to Deployment:
+- Completed Production App: 5/14/2024
+- Beta Test Phase Start: 5/15/2024
+
+Demo Video (5/9/2024):
+https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing
+
+
+
+
+
+
+
+## Building the Application:
 
 ### Phase 0: Describing the Problem and solution statement
 
