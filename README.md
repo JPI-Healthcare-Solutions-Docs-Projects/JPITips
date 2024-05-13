@@ -1,6 +1,6 @@
 # JPI Tips Electron Application
 
-### Table of Contents
+## Table of Contents
 **[Latest Updates](#patch-notes)**<br>
 **[Manual Installation Instructions](#manual-installation-instructions)**<br>
 **[Future Features](#future-features)**<br>
@@ -10,9 +10,12 @@
 - **[Phase 2: Initializing the Project](#phase-2-initializing-the-project)**<br>
 - **[Phase 3: Building Features](#phase-3-building-features)**<br>
 - **[Phase 4: Refactoring](#phase-4-refactoring)**<br>
+
 **[Download Demo](#download-link)**<br>
 
-## Patch Notes
+##
+
+### Patch Notes
 
 #### Update 5/13/2024:
 
@@ -34,7 +37,9 @@ Estimated Timeline to Deployment:
 
 [Demo Video (5/9/2024)](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
 
-## Manual Installation Instructions
+##
+
+### Manual Installation Instructions
 
 Prerequisites: <br>
 - Node (LTS) <br>
@@ -51,26 +56,28 @@ Prerequisites: <br>
    npm run start
    </pre>
 
-## Future Features
+##
 
-### Upcoming Patch 1.0.0.1
+### Future Features
+
+#### Upcoming Patch 1.0.0.1
 - Store Product and Practice State in Persistent Storage
 - Have a Loading Bar while Assets are rendering
 - Styling the Settings Bar
 
-### Future Patches TODO:
+#### Future Patches TODO:
 - Refactoring Types
 - Refactoring all components and pages
 - Setting up Github Publish
 - Set up IPC Listeners for Panel Connection
 
+##
 
+### Building the Application:
 
-## Building the Application:
+#### Phase 0: Describing the Problem and solution statement
 
-### Phase 0: Describing the Problem and solution statement
-
-### Identifying the problem
+##### Identifying the problem
 
 The Acquisition software did not have clear and intuitive prompts for error messages, and lack of an FAQ for troubleshooting. Some context is that the Acquisition software is built by the JPI Branch in Korea.
 
@@ -78,15 +85,15 @@ Other issues we face with this:
 - The Market in Asia differs from the market in North and South America.
 - JPI Korea support infrastructure is through dealers, where we are the first line of support for our dealers.
 
-### The solution
+##### The solution
 
 To compensate for the lack of control we have with our acquisiton software, we moved in a direction of implementing our own software that will run concurrently with the acquisition.
 
-#
+##
 
-### Phase 1: Application Mock Up and Workflow
+#### Phase 1: Application Mock Up and Workflow
 
-#### Project Structure
+##### Project Structure
 
 Following the Atom Design:
 https://bradfrost.com/blog/post/atomic-web-design/
@@ -103,7 +110,7 @@ Benefits for using the Atom Design Structure:
 - Clear and concise Modularity
 - Scalable Structure
 
-#### Desinging a mock up of the tips window:
+##### Desinging a mock up of the tips window:
 
 ![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/f0ca3994-bfe3-47a1-af32-bafb9b3586b9)
 
@@ -111,7 +118,7 @@ Benefits for using the Atom Design Structure:
 
 We designed the Mock-Up in the shoes of the typical doctor that will use our acquisition software. We wanted to make it as concise yet user-friendly as possible. Adding a close button instead of the X button in the window bar, adding progression in the dots below the tips, and creating a background to play with the contrast, brightness and focus of the content.
 
-#### Gathering Assets used in the mockup:
+##### Gathering Assets used in the mockup:
 
 ![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/90fb9876-ce09-4c44-89a7-571853725d21)
 
@@ -119,13 +126,13 @@ By Organizing the assets and constructing an intuitive structure makes it easier
 
 #
 
-### Phase 2: Initializing the Project
+#### Phase 2: Initializing the Project
 
-### Enforcing Coding Standard Rules (for myself)
+##### Enforcing Coding Standard Rules (for myself)
 
-#### Project Guidelines
+##### Project Guidelines
 
-#### Dependency Restrictions:
+###### Dependency Restrictions:
 
 Rule 1: Any dependency that needs to be installed must provide following:
 Show that dependency function is not available in native
@@ -137,7 +144,7 @@ Rule 2: All PR with dependencies that deviate from Production will be closed
 
 Rule 3: Dependency must be: active within a reputable community, well documented, and ongoing updates
 
-#### Pull Request Restrictions:
+###### Pull Request Restrictions:
 
 Rule 1: PR must correlate to a ticket on JIRA
 PR with changes unrelated to Ticket will not be merged. This includes CSS Styling! Do not add styling unless Ticket request styling changes. Only implement functionality if the ticket is regarding a feature
@@ -156,7 +163,7 @@ Rule 6: Document your code thoroughly.
 
 Rule 7: Make sure all the existing tests pass by running package.json test command
 
-#### Branch Restrictions:
+###### Branch Restrictions:
 
 Rule 1: Branch name MUST have following naming convention: 
 {TypeOfTicket}/{JIRA Ticket Number}
@@ -165,7 +172,7 @@ Example:
 Branch name: feature/ticket-9
 (the branch MUST start with a lowercase - git ruling) 
 
-#### Code Review Restrictions:
+###### Code Review Restrictions:
 
 Rule 1: Code Review must be thorough:
 Review if any additional dependencies were added
@@ -174,7 +181,7 @@ End Game
 Review the time complexity of implementation
 If non optimal solution is created, requested change must include the optimized strategy for implementation
 
-#### JIRA Task Restrictions:
+###### JIRA Task Restrictions:
 
 Rule 1: Jira in progress Tasks must be free from dependency injections
 No two in progress JIRA Task should depend on each other to be completed
@@ -182,7 +189,7 @@ No two in progress JIRA Task should depend on each other to be completed
 Rule 2: Jira tasks that are high level or large tickets, must be modularized into smaller tickets if possible
 Github Branches will be named after the child tickets
 
-### Creating and Adding JIRA Tasks to the JIRA Board
+###### Creating and Adding JIRA Tasks to the JIRA Board
 
 Creating the timeline for the project:
 
@@ -198,14 +205,15 @@ I make sure to specify what type of task it is:
 - Refactor
 - Testing
 
-#### Example: Fundamental: Setting Up webpack
+Example: Fundamental: Setting Up webpack
+
 Lets say the task code is: JTWP-14
 <br>
 Then the github branch name is: fundamental/JTWP-14
 
-### Phase 3: Building Features
+#### Phase 3: Building Features
 
-#### Core principles
+##### Core principles
 
 - Build the application before pushing to github
 - Make sure the branch name and code worked on is focusing ONLY on the JIRA Task
@@ -213,7 +221,7 @@ Then the github branch name is: fundamental/JTWP-14
 - Review code before making the pull request
 - Test the code (Still trying to master tdd)
 
-### Phase 4: Refactoring
+#### Phase 4: Refactoring
 
 Theres always room to improve!
 - code readability
@@ -221,6 +229,8 @@ Theres always room to improve!
 - code modularity
 - clean code
 
-## Download Link
+##
+
+### Download Link
 
 
