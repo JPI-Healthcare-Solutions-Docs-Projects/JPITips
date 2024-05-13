@@ -1,5 +1,7 @@
 # JPI Tips Electron Application
 
+![2024-05-1315-23-24-ezgif com-video-to-gif-converter](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/0e0202f0-6be5-4090-b2d1-46e68d3bb46e)
+
 ## Table of Contents
 **[Latest Updates](#patch-notes)**<br>
 **[Manual Installation Instructions](#manual-installation-instructions)**<br>
