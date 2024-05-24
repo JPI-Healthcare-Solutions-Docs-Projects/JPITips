@@ -1,7 +1,7 @@
 import JPIMainTemplate from "../../templates/main/index"
 
 //Context
-import { SettingsContext } from "../../context/contextProviders"
+import { SettingsContext } from "../../../context/contextProviders"
 import { useContext } from "react"
 
 import "./styles.css"

@@ -5,7 +5,7 @@ import SettingsPage from "../../organisms/settings"
 import "./styles.css"
 
 //Context
-import { SettingsContext } from "../../context/contextProviders"
+import { SettingsContext } from "../../../context/contextProviders"
 import { useContext } from "react"
 
 const JPIMainTemplate = () => {

@@ -1,12 +1,12 @@
 //Tools
 import { createRoot } from 'react-dom/client';
-import { ProductType, SettingsType, PracticeType } from './context/contextProviders';
+import { ProductType, SettingsType, PracticeType } from '../context/contextProviders';
 
 //App
 import App from './pages/main';
 
 //Styling
-import '../index.css';
+import './styles.css';
 
 declare global {
   interface Window {
