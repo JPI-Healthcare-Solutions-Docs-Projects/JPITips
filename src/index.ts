@@ -9,6 +9,8 @@ if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
+//TODO: Add Icon for Desktop App
+
 // Create the browser window.
 const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
