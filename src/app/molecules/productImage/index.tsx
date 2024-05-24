@@ -1,4 +1,4 @@
-import "./styles"
+import "./styles.css"
 import { ProductImages } from "../../atoms/dynamic/index"
 
 const ProductImage = () => {

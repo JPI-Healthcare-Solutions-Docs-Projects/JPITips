@@ -4,6 +4,7 @@ import JPIMainTemplate from "../../templates/main/index"
 import { SettingsContext } from "../../context/contextProviders"
 import { useContext } from "react"
 
+import "./styles.css"
 //Pass the context prop from here into JPIMainTemplate
 
 
@@ -11,7 +12,7 @@ import { useContext } from "react"
 const jpiTipsPage = () => {
 
   return (
-    <div>
+    <div className="RootPage">
       <JPIMainTemplate/>
     </div>
   )

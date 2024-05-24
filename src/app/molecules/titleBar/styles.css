@@ -1,6 +1,6 @@
 .titleBarMoleContainer {
     display: grid;
-    width: 800px;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(31px, auto);
     align-items: center;
