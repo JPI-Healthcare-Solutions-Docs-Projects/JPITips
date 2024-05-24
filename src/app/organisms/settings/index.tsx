@@ -1,8 +1,9 @@
 import SettingMolecule from "../../molecules/settings"
+import "./styles.css"
 
 const SettingsPage = () => {
   return (
-    <div>
+    <div className="settingsContainer">
         <SettingMolecule/>
     </div>
   )

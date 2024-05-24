@@ -7,6 +7,7 @@
 
 .embla {
     max-width: 400px;
+    max-height: 140px;
     --slide-height: 100px;
     --slide-spacing: 4rem;
     --slide-size: 65%;
@@ -37,13 +38,11 @@
   .embla__controls {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1.2rem;
     margin-top: .1rem;
   }
   .embla__buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
   }
   
   .embla__progress {
@@ -55,10 +54,10 @@
     justify-self: center;
     align-self: center;
     width: 200px;
-    max-width: 90%;
     overflow: hidden;
     justify-self: center;
   }
+
   .embla__progress__bar {
     background-color: #283142;
     position: absolute;

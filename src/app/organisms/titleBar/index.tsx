@@ -1,5 +1,5 @@
 import TitleBarMolecule from "../../molecules/titleBar"
-import './styles'
+import './styles.css'
 
 const TitleBar = () => {
   return (

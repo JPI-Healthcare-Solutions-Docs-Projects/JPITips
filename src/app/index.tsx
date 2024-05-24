@@ -8,7 +8,11 @@ import App from './pages/main';
 //Styling
 import '../index.css';
 
-//Context when settings button is clicked
+declare global {
+  interface Window {
+    electron: any;
+  }
+}
 
 const root = createRoot(document.getElementById('root') as HTMLInputElement);
 root.render(

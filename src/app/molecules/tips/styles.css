@@ -1,13 +1,26 @@
 .TipsContainer {
     display: grid;
-    justify-items: center;
-    align-items: center;
 }
 
 .Carousel {
-    align-self: self-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
 }
 
 .CloseButton {
+    display: flex;
     align-self: self-start;
+    justify-self: center;
+}
+
+.TipsButton {
+    align-self: self-end;
+    justify-self: center;
+}
+
+.ProductLogo {
+    align-self: self-end;
+    justify-self: center;
 }
