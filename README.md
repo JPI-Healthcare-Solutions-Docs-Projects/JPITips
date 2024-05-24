@@ -4,8 +4,8 @@
 
 ## Table of Contents
 **[Latest Updates](#patch-notes)**<br>
-**[Manual Installation Instructions](#manual-installation-instructions)**<br>
 **[Future Features](#future-features)**<br>
+**[Manual Installation Instructions](#manual-installation-instructions)**<br>
 **[Building the Application](#building-the-application)**<br>
 - **[Phase 0: Describing the Problem and solution statement](#phase-0-describing-the-problem-and-solution-statement)**<br>
 - **[Phase 1: Application Mock Up and Workflow](#phase-1-application-mock-up-and-workflow)**<br>
@@ -18,6 +18,14 @@
 ##
 
 ### Patch Notes
+
+#### Understanding Version Control:
+
+1.1 = Feature Update
+
+1.0.1 = Bug Update
+
+1.0.1A = Bug child Update
 
 #### Update 5/13/2024:
 
@@ -34,10 +42,25 @@ I am about 50% complete with the project before Production Deployment. All that 
 - [ ] Auto Update Module
 
 Estimated Timeline to Deployment:
-- Completed Production App: 5/14/2024
-- Beta Test Phase Start: 5/15/2024
+- Completed MVP: 5/14/2024
+- Beta Test Phase Start: 5/31/2024
 
 [Demo Video (5/9/2024)](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
+
+##
+
+### Future Features
+
+#### In-Production Features Patch 1.1
+- Store Product and Practice State in Persistent Storage
+- Have a Loading Bar while Assets are rendering
+- Styling the Settings Bar
+
+#### Future Patches TODO:
+- Refactoring Types
+- Refactoring all components and pages
+- Setting up Github Publish
+- Set up IPC Listeners for Panel Connection
 
 ##
 
@@ -57,21 +80,6 @@ Prerequisites: <br>
    <pre>
    npm run start
    </pre>
-
-##
-
-### Future Features
-
-#### Upcoming Patch 1.0.0.1
-- Store Product and Practice State in Persistent Storage
-- Have a Loading Bar while Assets are rendering
-- Styling the Settings Bar
-
-#### Future Patches TODO:
-- Refactoring Types
-- Refactoring all components and pages
-- Setting up Github Publish
-- Set up IPC Listeners for Panel Connection
 
 ##
 
