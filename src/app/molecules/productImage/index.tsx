@@ -1,13 +1,16 @@
-import "./styles.css"
-import { ProductImages } from "../../atoms/dynamic/index"
+//Atoms
+import { ProductImages } from "../../atoms/dynamic/index";
+
+//Styles
+import "./styles.css";
 
 const ProductImage = () => {
 
   return (
-    <div className="imageContainer">
+    <div className="image-container">
       <ProductImages />
     </div>
-  )
-}
+  );
+};
 
-export default ProductImage
+export default ProductImage;

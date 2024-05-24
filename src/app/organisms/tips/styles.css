@@ -1,0 +1,5 @@
+.tips-page-items-org {
+    display: flex;
+    height: 469px;
+    grid-template-columns: repeat(2, 50%);
+}

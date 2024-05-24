@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 //Test Tips
 // import { DirectVet, TruePortable } from "../../../../public/tips";
 

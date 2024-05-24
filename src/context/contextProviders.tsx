@@ -16,7 +16,7 @@ export const PracticeContext = createContext<PracticeContextType>({
 
 export const SettingsContext = createContext<SettingsPageContextType>({
     settings: false,
-    setSettings: () => {false}
+    setSettings: () => { false }
 });
 
 //Providers
@@ -27,7 +27,7 @@ export const ProductType = ({ children }: ContextProviderProps) => {
             {children}
         </ProductContext.Provider>
     )
-}
+};
 
 export const PracticeType = ({ children }: ContextProviderProps) => {
     const [practice, setPractice] = useState("Default");
@@ -36,7 +36,7 @@ export const PracticeType = ({ children }: ContextProviderProps) => {
             {children}
         </PracticeContext.Provider>
     )
-}
+};
 
 export const SettingsType = ({ children }: ContextProviderProps) => {
     const [settings, setSettings] = useState(false);
@@ -45,4 +45,4 @@ export const SettingsType = ({ children }: ContextProviderProps) => {
             {children}
         </SettingsContext.Provider>
     )
-}
+};

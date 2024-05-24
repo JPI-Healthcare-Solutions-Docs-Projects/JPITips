@@ -1,4 +1,4 @@
-.titleBarMoleContainer {
+.titleBar-container {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -6,9 +6,9 @@
     align-items: center;
 }
 
-.titleContent {
+.title-content {
     font-size: 12px;
-    color:white;
+    color: white;
     grid-column: 2 / 3;
     grid-row: 1;
     display: flex;
@@ -16,15 +16,15 @@
     align-items: center;
 }
 
-.SettingsButton {
+.settings-button {
     grid-column: 3 / 3;
     grid-row: 1;
     justify-self: end;
     margin-right: 8px;
 }
 
-.titleText {
+.title-text {
     display: flex;
     justify-self: center;
-    align-items: center; 
+    align-items: center;
 }
