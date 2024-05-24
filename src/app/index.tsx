@@ -8,19 +8,13 @@ import App from './pages/main';
 //Styling
 import './styles.css';
 
-declare global {
-  interface Window {
-    electron: any;
-  }
-}
-
 const root = createRoot(document.getElementById('root') as HTMLInputElement);
 root.render(
-    <ProductType>
-        <SettingsType>
-            <PracticeType>
-                <App />
-            </PracticeType>
-        </SettingsType>
-    </ProductType>
+  <ProductType>
+    <SettingsType>
+      <PracticeType>
+        <App />
+      </PracticeType>
+    </SettingsType>
+  </ProductType>
 );

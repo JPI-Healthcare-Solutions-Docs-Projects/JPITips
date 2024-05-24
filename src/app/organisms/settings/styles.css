@@ -1,5 +1,5 @@
-.settingsContainer {
+.settings-container {
     display: flex;
     height: 469px;
-    color: white
+    color: white;
 }

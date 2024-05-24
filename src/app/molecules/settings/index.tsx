@@ -1,5 +1,5 @@
-import { BackButton } from "../../atoms/buttons"
-import { InputFields } from "../../atoms/fields"
+import { BackButton } from "../../atoms/buttons";
+import { InputFields } from "../../atoms/fields";
 
 const SettingMolecule = () => {
   return (
@@ -7,7 +7,7 @@ const SettingMolecule = () => {
         <BackButton/>
         <InputFields />
     </div>
-  )
-}
+  );
+};
 
-export default SettingMolecule
+export default SettingMolecule;

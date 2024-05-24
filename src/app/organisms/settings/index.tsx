@@ -1,12 +1,15 @@
-import SettingMolecule from "../../molecules/settings"
-import "./styles.css"
+//Molecule
+import SettingMolecule from "../../molecules/settings";
+
+//Styles
+import "./styles.css";
 
 const SettingsPage = () => {
   return (
-    <div className="settingsContainer">
-        <SettingMolecule/>
+    <div className="settings-container">
+      <SettingMolecule />
     </div>
-  )
-}
+  );
+};
 
-export default SettingsPage
+export default SettingsPage;

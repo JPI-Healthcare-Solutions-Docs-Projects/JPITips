@@ -1,33 +1,27 @@
-import './styles'
-import { SettingsButton } from '../../atoms/buttons'
-import { ProductTitle, Icon } from '../../atoms/dynamic'
-import JPIVetLogo from '../../../../public/assets/image/logos/JPIVetLogo.png'
+//Atoms
+import { SettingsButton } from '../../atoms/buttons';
+import { ProductTitle, Icon } from '../../atoms/dynamic';
+
+//Styling
+import './styles.css';
 
 const TitleBarMolecule = () => {
-
-    /*Based on the context, 
-    - Change the JPI Product to the Product chosen
-    - Change the icon to the product chosen
-    */
-
     return (
-        <div className="titleBarMoleContainer">
-            <div className="titleContent">
-                <div className="titleBarLogo">
-                    <Icon/>
-                </div>
-                <div className="titleText">
+        <div className="titleBar-container">
+            <div className="title-content">
+                <Icon />
+                <div className="title-text">
                     <div>
                         <ProductTitle />
                     </div>
                     &nbsp;| Operation Tips
                 </div>
             </div>
-            <div className="SettingsButton">
+            <div className="settings-button">
                 <SettingsButton />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TitleBarMolecule
+export default TitleBarMolecule;

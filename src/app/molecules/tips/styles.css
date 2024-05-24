@@ -1,26 +1,26 @@
-.TipsContainer {
+.tips-container {
     display: grid;
 }
 
-.Carousel {
+.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 140px;
 }
 
-.CloseButton {
+.red-close-button {
     display: flex;
     align-self: self-start;
     justify-self: center;
 }
 
-.TipsButton {
+.grey-tips-button {
     align-self: self-end;
     justify-self: center;
 }
 
-.ProductLogo {
+.product-logo-image {
     align-self: self-end;
     justify-self: center;
 }

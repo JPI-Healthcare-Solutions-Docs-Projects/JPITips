@@ -1,5 +1,6 @@
+/* eslint-disable import/no-unresolved */
 import './styles.css'
-import { ProductContext, SettingsContext } from '../../../context/contextProviders'
+import { SettingsContext } from '../../../context/contextProviders'
 import { useContext, PropsWithChildren, useCallback, useEffect, useState } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import prevButton from '/public/assets/image/buttons/prevButton.png'
@@ -11,8 +12,8 @@ import CloseTipsButton from '/public/assets/image/buttons/CloseTipsButton.png'
 export const CloseButton = () => {
   return (
     <div>
-      <button className="closeTipsButton" onClick={()=> window.electron.ipcRenderer.sendMessage('close-window')}>
-        <img src={CloseTipsButton}/>
+      <button className="closeTipsButton" onClick={() => window.electron.ipcRenderer.sendMessage('close-window')}>
+        <img src={CloseTipsButton} />
       </button>
     </div>
   )
