@@ -19,7 +19,7 @@
 
 ### Patch Notes
 
-#### Understanding Version Control:
+#### Understanding the Project's Version Control:
 
 1.1 = Feature Update
 
