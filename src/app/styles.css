@@ -1,11 +1,10 @@
 * {
+  /* Removes Margin (border) around the Application */
   margin: 0;
-
 }
 
-
 :root {
+  /* Change Font here */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  
 }
 

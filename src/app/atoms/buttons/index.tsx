@@ -1,5 +1,5 @@
 import './styles.css'
-import { ProductContext, SettingsContext } from '../../context/contextProviders'
+import { ProductContext, SettingsContext } from '../../../context/contextProviders'
 import { useContext, PropsWithChildren, useCallback, useEffect, useState } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import prevButton from '/public/assets/image/buttons/prevButton.png'

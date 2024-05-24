@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ProductContext, PracticeContext } from "../../context/contextProviders"
+import { ProductContext, PracticeContext } from "../../../context/contextProviders"
 
 export const InputFields = () => {
     //Product State

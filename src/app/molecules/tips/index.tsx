@@ -1,5 +1,5 @@
 import { ProductLogo, Carousel } from '../../atoms/dynamic'
-import { ProductContext, PracticeContext } from '../../context/contextProviders'
+import { ProductContext, PracticeContext } from '../../../context/contextProviders'
 import { useContext } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import tipsButton from '/public/assets/image/buttons/TipsButton.png'

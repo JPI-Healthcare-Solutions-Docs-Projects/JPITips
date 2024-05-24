@@ -19,7 +19,7 @@ import TruePortable from "/public/assets/image/products/TruePortable.png"
 import './styles.css'
 
 import { useContext, useCallback, useEffect, useState } from 'react';
-import { ProductContext, PracticeContext } from "../../context/contextProviders";
+import { ProductContext, PracticeContext } from "../../../context/contextProviders";
 import {
   NextButton,
   PrevButton,
