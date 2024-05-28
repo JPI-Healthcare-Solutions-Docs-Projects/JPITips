@@ -5,3 +5,13 @@
     background-repeat: no-repeat;
     background-size: 110%;
 }
+
+.setting-container {
+    position: absolute;
+    z-index: 3;
+    width: 1000px;
+    background-color: rgb(5, 43, 77);
+    background-image: url("../../../../public/assets/image/background/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+}

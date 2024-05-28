@@ -19,8 +19,11 @@ const JPIMainTemplate = () => {
       <div className="title-bar-container">
         <TitleBar />
       </div>
+      <div className="setting-container">
+      {settings && <SettingsPage />}
+      </div>
       <div className="content-container">
-        {settings ? <SettingsPage /> : <TipsOrganism />}
+        <TipsOrganism />
       </div>
     </div>
   );
