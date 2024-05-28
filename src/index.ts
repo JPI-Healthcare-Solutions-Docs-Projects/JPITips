@@ -22,6 +22,9 @@ const createWindow = (): void => {
     frame: false,
     thickFrame: false,
 
+    // Hides from taskbar
+    skipTaskbar: true,
+
     // Prevents user from resizing windows
     resizable: false,
 
