@@ -21,7 +21,8 @@ export const SettingsContext = createContext<SettingsPageContextType>({
 
 //Providers
 export const ProductType = ({ children }: ContextProviderProps) => {
-    const [product, setProduct] = useState("Default");
+    const [product, setProduct] = useState(localStorage.getItem('product') || "Default");
+    console.log(localStorage.getItem('product'));
     return (
         <ProductContext.Provider value={{ product, setProduct }}>
             {children}
@@ -30,7 +31,7 @@ export const ProductType = ({ children }: ContextProviderProps) => {
 };
 
 export const PracticeType = ({ children }: ContextProviderProps) => {
-    const [practice, setPractice] = useState("Default");
+    const [practice, setPractice] = useState(localStorage.getItem('practice') || "Default");
     return (
         <PracticeContext.Provider value={{ practice, setPractice }}>
             {children}

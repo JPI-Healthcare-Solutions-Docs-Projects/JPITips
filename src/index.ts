@@ -35,10 +35,22 @@ const createWindow = (): void => {
   });
 
   // Keeping the application always on top of any application even fullscreen apps.
-  mainWindow.setAlwaysOnTop(true, "floating");
-  mainWindow.setVisibleOnAllWorkspaces(true);
+  mainWindow.setAlwaysOnTop(true, "screen-saver");
+  mainWindow.setVisibleOnAllWorkspaces(true) ;
   mainWindow.setFullScreenable(false);
+
+
+  setTimeout(function(){
+  mainWindow.moveTop();
+}, 200);
+
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
+
+  // mainWindow.webContents
+  // .executeJavaScript('localStorage.getItem("thekey");', true)
+  // .then(result => {
+  //   console.log(result);
+  // });
 
   // Optional: Uncomment Below to activate Console Dev Tools
   // mainWindow.webContents.openDevTools();
