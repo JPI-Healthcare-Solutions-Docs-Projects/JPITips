@@ -36,6 +36,10 @@ import Autoplay from 'embla-carousel-autoplay'
 
 export const ProductImages: React.FC = () => {
   const { product, setProduct } = useContext(ProductContext)
+  useEffect(() => {
+    localStorage.setItem('product', product);
+  }, [product]);
+
   return (
     <div className="productImage">
       {product === "Default" && <img src={Panel} height="235px" width="276px"/>}
@@ -60,6 +64,11 @@ export const ProductTitle: React.FC = () => {
 
 export const Icon: React.FC = () => {
   const { practice, setPractice } = useContext(PracticeContext)
+
+  useEffect(() => {
+    localStorage.setItem('practice', practice);
+  }, [practice]);
+
   return (
     <div className="titleBarLogo">
       {practice === "Default" && <img src={MedLogo} />}
