@@ -241,5 +241,5 @@ Theres always room to improve!
 
 ### Download Link
 
-[Version 1.0.0.0](https://drive.google.com/file/d/13YT5l79QOP_YWGrOwJipG4FEOuXbxil9/view?usp=sharing)
+[Version 1.0.0.0](https://drive.google.com/drive/folders/1pCKURAY2Aaj84w_QtZfpuUYxyrZ_P2Wc?usp=drive_link)
 
