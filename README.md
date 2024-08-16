@@ -5,7 +5,7 @@
 ## Table of Contents
 **[Latest Updates](#patch-notes)**<br>
 **[Future Features](#future-features)**<br>
-**[Manual Installation Instructions](#manual-installation-instructions)**<br>
+**[Installation Instructions](#installation-instructions)**<br>
 **[Building the Application](#building-the-application)**<br>
 - **[Phase 0: Describing the Problem and solution statement](#phase-0-describing-the-problem-and-solution-statement)**<br>
 - **[Phase 1: Application Mock Up and Workflow](#phase-1-application-mock-up-and-workflow)**<br>
@@ -64,7 +64,7 @@ Estimated Timeline to Deployment:
 
 ##
 
-### Manual Installation Instructions
+### Installation Instructions
 
 Prerequisites: <br>
 - Node (LTS) <br>
