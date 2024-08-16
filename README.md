@@ -138,65 +138,6 @@ By Organizing the assets and constructing an intuitive structure makes it easier
 
 #### Phase 2: Initializing the Project
 
-##### Enforcing Coding Standard Rules (for myself - ATLEAST TRIED MY BEST TO!)
-
-###### Dependency Restrictions:
-
-Rule 1: Any dependency that needs to be installed must provide following:
-Show that dependency function is not available in native
-Provide justification of why we need this dependency
-Provide alternative dependencies and justify reasoning of not choosing alternative
-Provide Pro and Con of dependency efficiency in application
-
-Rule 2: All PR with dependencies that deviate from Production will be closed
-
-Rule 3: Dependency must be: active within a reputable community, well documented, and ongoing updates
-
-###### Pull Request Restrictions:
-
-Rule 1: PR must correlate to a ticket on JIRA
-PR with changes unrelated to Ticket will not be merged. This includes CSS Styling! Do not add styling unless Ticket request styling changes. Only implement functionality if the ticket is regarding a feature
-
-Rule 2: Unrelated PR will be closed and can potentially be re-addressed as a github issue or proposal for a creation of new task on JIRA
-Collaborator must provide justification on why the change must be made, or the issue that they encountered
-
-Rule 3: PR must pass all checks in order to remain open.
-If PR does not pass check due to a bug, Collaborator must create a new github issue instead of a PR.
-
-Rule 4: All PR must include tests that cover the changes you've made in your work.
-
-Rule 5: Write readable code – keep functions small and modular and name variables descriptively.
-
-Rule 6: Document your code thoroughly.
-
-Rule 7: Make sure all the existing tests pass by running package.json test command
-
-###### Branch Restrictions:
-
-Rule 1: Branch name MUST have following naming convention: 
-{TypeOfTicket}/{JIRA Ticket Number}
-
-Example:
-Branch name: feature/ticket-9
-(the branch MUST start with a lowercase - git ruling) 
-
-###### Code Review Restrictions:
-
-Rule 1: Code Review must be thorough:
-Review if any additional dependencies were added
-
-End Game
-Review the time complexity of implementation
-If non optimal solution is created, requested change must include the optimized strategy for implementation
-
-###### JIRA Task Restrictions:
-
-Rule 1: Jira in progress Tasks must be free from dependency injections
-No two in progress JIRA Task should depend on each other to be completed
-
-Rule 2: Jira tasks that are high level or large tickets, must be modularized into smaller tickets if possible
-Github Branches will be named after the child tickets
-
 ###### Creating and Adding JIRA Tasks to the JIRA Board
 
 Creating the timeline for the project:
