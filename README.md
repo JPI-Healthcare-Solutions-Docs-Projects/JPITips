@@ -35,7 +35,7 @@ I am about 50% complete with the project before Production Deployment. All that 
 - [x] Designing Styling
 - [x] Creating Core Function
 - [x] Implementing Styling
-- [ ] Implementing Settings Page
+- [x] Implementing Settings Page
 - [ ] Style the Settings Page
 - [ ] Review with Marketing Team and Get List of Tips from Tech Team
 - [ ] Refactoring and Optimization
