@@ -27,8 +27,6 @@
 
 1.0.1A = Bug child Update
 
-#### Update 5/13/2024:
-
 I am about 50% complete with the project before Production Deployment. All that are left are smaller tasks that will take no more than 2-3 days to complete.
 
 - [x] Designing the application solution
@@ -41,11 +39,7 @@ I am about 50% complete with the project before Production Deployment. All that 
 - [ ] Refactoring and Optimization
 - [ ] Auto Update Module
 
-Estimated Timeline to Deployment:
-- Completed MVP: 5/14/2024
-- Beta Test Phase Start: 5/31/2024
-
-[Demo Video (5/9/2024)](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
 
 ##
 
