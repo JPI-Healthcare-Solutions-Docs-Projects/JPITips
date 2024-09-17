@@ -27,7 +27,7 @@
 
 1.0.1A = Bug child Update
 
-I am about 50% complete with the project before Production Deployment. All that are left are smaller tasks that will take no more than 2-3 days to complete.
+I am about 50% complete with the project before Production Deployment.
 
 - [x] Designing the application solution
 - [x] Designing Styling
