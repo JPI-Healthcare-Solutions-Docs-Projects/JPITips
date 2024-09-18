@@ -1,180 +1,180 @@
 # JPI Tips Electron Application
 
-![2024-05-1315-23-24-ezgif com-video-to-gif-converter](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/0e0202f0-6be5-4090-b2d1-46e68d3bb46e)
+![Demo GIF](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/0e0202f0-6be5-4090-b2d1-46e68d3bb46e)
 
 ## Table of Contents
-**[Latest Updates](#patch-notes)**<br>
-**[Future Features](#future-features)**<br>
-**[Installation Instructions](#installation-instructions)**<br>
-**[Building the Application](#building-the-application)**<br>
-- **[Phase 0: Describing the Problem and solution statement](#phase-0-describing-the-problem-and-solution-statement)**<br>
-- **[Phase 1: Application Mock Up and Workflow](#phase-1-application-mock-up-and-workflow)**<br>
-- **[Phase 2: Initializing the Project](#phase-2-initializing-the-project)**<br>
-- **[Phase 3: Building Features](#phase-3-building-features)**<br>
-- **[Phase 4: Refactoring](#phase-4-refactoring)**<br>
 
-**[Download Demo](#download-link)**<br>
+- [Latest Updates](#latest-updates)
+- [Future Features](#future-features)
+- [Installation Instructions](#installation-instructions)
+- [Building the Application](#building-the-application)
+  - [Phase 0: Describing the Problem and Solution Statement](#phase-0-describing-the-problem-and-solution-statement)
+  - [Phase 1: Application Mock-Up and Workflow](#phase-1-application-mock-up-and-workflow)
+  - [Phase 2: Initializing the Project](#phase-2-initializing-the-project)
+  - [Phase 3: Building Features](#phase-3-building-features)
+  - [Phase 4: Refactoring](#phase-4-refactoring)
+- [Download Demo](#download-demo)
 
-##
+---
 
-### Patch Notes
+## Latest Updates
 
 #### Understanding the Project's Version Control:
 
-1.1 = Feature Update
+- **1.1** = Feature Update
+- **1.0.1** = Bug Update
+- **1.0.1A** = Bug Child Update
 
-1.0.1 = Bug Update
+The project is currently **50% complete** before the production deployment.
 
-1.0.1A = Bug child Update
-
-I am about 50% complete with the project before Production Deployment.
+**Progress:**
 
 - [x] Designing the application solution
-- [x] Designing Styling
-- [x] Creating Core Function
-- [x] Implementing Styling
-- [x] Implementing Settings Page
-- [ ] Style the Settings Page
-- [ ] Review with Marketing Team and Get List of Tips from Tech Team
-- [ ] Refactoring and Optimization
-- [ ] Auto Update Module
+- [x] Designing styling
+- [x] Creating core function
+- [x] Implementing styling
+- [x] Implementing settings page
+- [ ] Style the settings page
+- [ ] Review with the marketing team and get a list of tips from the tech team
+- [ ] Refactoring and optimization
+- [ ] Auto-update module
 
 [Demo Video](https://drive.google.com/file/d/1SHbzely6DuURx0wq9AohfuXIlmkuUmQu/view?usp=sharing)
 
-##
+---
 
-### Future Features
+## Future Features
 
-#### In-Production Features Patch 1.1
-- Store Product and Practice State in Persistent Storage
-- Have a Loading Bar while Assets are rendering
-- Styling the Settings Bar
+### In-Production Features (Patch 1.1)
 
-#### Future Patches TODO:
-- Refactoring Types
-- Refactoring all components and pages
-- Setting up Github Publish
-- Set up IPC Listeners for Panel Connection
+- Store product and practice state in persistent storage
+- Implement a loading bar while assets are rendering
+- Style the settings bar
 
-##
+### Future Patches TODO
 
-### Installation Instructions
+- Refactor types
+- Refactor all components and pages
+- Set up GitHub publishing
+- Set up IPC listeners for panel connection
 
-Prerequisites: <br>
-- Node (LTS) <br>
-- Visual Studio Code (LTS) <br>
+---
 
-1. Clone this repo
-2. Follow the instructions [Visual Studo Git Introduction](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+## Installation Instructions
+
+**Prerequisites:**
+
+- Node (LTS)
+- Visual Studio Code (LTS)
+
+**Steps:**
+
+1. Clone this repository.
+2. Follow the instructions: [Visual Studio Git Introduction](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
 3. Open a new terminal and type:
-   <pre>
+   ```bash
    npm install
-   </pre>
+   ```
 4. Run the application by typing the following in the terminal:
-   <pre>
+   ```bash
    npm run start
-   </pre>
+   ```
+---
 
-##
+## Building the Application
 
-### Building the Application:
+### Phase 0: Describing the Problem and Solution Statement
 
-#### Phase 0: Describing the Problem and solution statement
+#### Identifying the Problem
 
-##### Identifying the problem
+The acquisition software lacked clear, intuitive prompts for error messages and did not include an FAQ for troubleshooting. The software was built by the JPI branch in Korea, where we act as the first line of support for dealers.
 
-The Acquisition software did not have clear and intuitive prompts for error messages, and lack of an FAQ for troubleshooting. Some context is that the Acquisition software is built by the JPI Branch in Korea.
+Challenges:
 
-Other issues we face with this:
-- The Market in Asia differs from the market in North and South America.
-- JPI Korea support infrastructure is through dealers, where we are the first line of support for our dealers.
+- The market in Asia differs from North and South America.
+- JPI Korea’s support infrastructure works through dealers, where we provide the first line of support.
 
-##### The solution
+#### The Solution
 
-To compensate for the lack of control we have with our acquisiton software, we moved in a direction of implementing our own software that will run concurrently with the acquisition.
+We are developing our own software that will run concurrently with the acquisition software to address the limitations.
 
-##
+---
 
-#### Phase 1: Application Mock Up and Workflow
+### Phase 1: Application Mock-Up and Workflow
 
-##### Project Structure
+#### Project Structure
 
-Following the Atom Design:
-https://bradfrost.com/blog/post/atomic-web-design/
+We follow the **Atomic Design** methodology:
 
-Atoms: Hold basic building blocks such as buttons, input fields, titles, subtitles, etc...
+- **Atoms**: Basic building blocks (buttons, input fields, titles, etc.)
+- **Molecules**: Groups of atoms functioning together
+- **Organisms**: Groups of molecules forming a larger unit
+- **Pages**: Full-page functionality consuming organisms
 
-Molecules: Contain Groups of atoms functioning together as one unit
+**Benefits:**
 
-Organisms: Contains Groups of Molecules builing a larger group component
+- Clear and concise modularity
+- Scalable structure
 
-Pages: Consumes the Organisms to complete the full page functionality
+#### Designing the Mock-Up:
 
-Benefits for using the Atom Design Structure:
-- Clear and concise Modularity
-- Scalable Structure
+![Mock-Up](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/f0ca3994-bfe3-47a1-af32-bafb9b3586b9)
 
-##### Desinging a mock up of the tips window:
+We designed the mock-up with doctors in mind, focusing on a concise yet user-friendly experience. Features include a close button instead of the window's "X" button, progression dots below the tips, and a background to highlight the content.
 
-![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/f0ca3994-bfe3-47a1-af32-bafb9b3586b9)
+#### Gathering Assets:
 
-![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/216601eb-1dde-4fcd-b443-387c4622eb41)
+![Assets](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/90fb9876-ce09-4c44-89a7-571853725d21)
 
-We designed the Mock-Up in the shoes of the typical doctor that will use our acquisition software. We wanted to make it as concise yet user-friendly as possible. Adding a close button instead of the X button in the window bar, adding progression in the dots below the tips, and creating a background to play with the contrast, brightness and focus of the content.
+Organizing assets intuitively ensures easy future modifications.
 
-##### Gathering Assets used in the mockup:
+---
 
-![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/90fb9876-ce09-4c44-89a7-571853725d21)
+### Phase 2: Initializing the Project
 
-By Organizing the assets and constructing an intuitive structure makes it easier to utilize assets and change them as we need in the future
+#### Creating and Adding JIRA Tasks
 
-#
+We created a project timeline using JIRA:
 
-#### Phase 2: Initializing the Project
+![JIRA Timeline](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/d83583f0-378e-470b-b35a-0a14bd71bfd4)
 
-###### Creating and Adding JIRA Tasks to the JIRA Board
+For each task, we specify its place in the timeline and categorize it as:
 
-Creating the timeline for the project:
-
-![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/d83583f0-378e-470b-b35a-0a14bd71bfd4)
-
-![image](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/11099f0d-f347-44b9-979a-e066346ca9a6)
-
-When adding Tasks, I require to specify where in the timeline the task is designated to.
-
-I make sure to specify what type of task it is:
-- Fundemantal
+- Fundamental
 - Feature
 - Refactor
 - Testing
 
-Example: Fundamental: Setting Up webpack
+**Example:**
 
-Lets say the task code is: JTWP-14
-<br>
-Then the github branch name is: fundamental/JTWP-14
+- Task code: JTWP-14
+- Branch name: `fundamental/JTWP-14`
 
-#### Phase 3: Building Features
+---
 
-##### Core principles
+### Phase 3: Building Features
 
-- Build the application before pushing to github
-- Make sure the branch name and code worked on is focusing ONLY on the JIRA Task
-- Building small and modular pull requests related to a JIRA Task
-- Review code before making the pull request
-- Test the code (Still trying to master tdd)
+#### Core Principles
 
-#### Phase 4: Refactoring
+- Build the application before pushing to GitHub.
+- Ensure the branch name and code align with the JIRA task.
+- Create small, modular pull requests.
+- Review the code before making a pull request.
+- Test the code (still mastering TDD).
 
-Theres always room to improve!
-- code readability
-- documentation
-- code modularity
-- clean code
+---
 
-##
+### Phase 4: Refactoring
 
-### Download Link
+There’s always room to improve in:
+
+- Code readability
+- Documentation
+- Modularity
+- Clean code principles
+
+---
+
+## Download Demo
 
 [Version 1.0.0.0](https://drive.google.com/drive/folders/1pCKURAY2Aaj84w_QtZfpuUYxyrZ_P2Wc?usp=sharing)
-
