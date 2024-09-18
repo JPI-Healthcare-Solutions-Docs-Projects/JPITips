@@ -91,7 +91,7 @@ The acquisition software lacked clear, intuitive prompts for error messages and 
 
 Challenges:
 
-- The market in Asia differs from North and South America.
+- The market in Asia where the software is developed differs from North and South America.
 - JPI Korea’s support infrastructure works through dealers, where we provide the first line of support.
 
 #### The Solution
