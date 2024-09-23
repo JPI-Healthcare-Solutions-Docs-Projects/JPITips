@@ -1,4 +1,4 @@
-# JPI Tips Electron Application
+# JPI Tips
 
 ![Demo GIF](https://github.com/chitangchin/JPI-Tips-Window-App/assets/96362668/0e0202f0-6be5-4090-b2d1-46e68d3bb46e)
 
